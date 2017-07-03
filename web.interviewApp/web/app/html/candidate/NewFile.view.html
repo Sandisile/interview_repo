@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <!--  <link rel="stylesheet" href="style.css" />-->
+       <script data-require="angular.js@1.6.x" src="https://code.angularjs.org/1.6.0/angular.js" data-semver="1.4.9"></script>
+    <script src="search.filter.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="MainCtrl">
+      <table>
+        <tr>
+        <td>Start Date</td>
+        <td><input type="text" name="startDate" ng-model="startDate" ng-false-value="" /></td>
+        <td>End Date</td>
+        <td><input type="text" name="endDate" ng-model="endDate"  ng-false-value="" /></td>
+        </tr>
+      </table>
+      <table>
+       <tr>
+        <th>Date</th>.
+        <th>Stock</th>
+       </tr>
+       <tr ng-repeat="r in subject.record in records | filterByDate: startDate: endDate">
+         <td>{{ r.name | date:'dd-MM-yyyy'}}</td>
+         <td>{{ r.marks }}</td> 
+       </tr>
+      </table>
+    </div>
+
+  </body>
+
+</html>

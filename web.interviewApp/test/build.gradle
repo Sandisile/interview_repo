@@ -1,0 +1,10 @@
+project.ext.moduleType = 'test-web'
+project.ext.moduleName = 'web.interviewApp.test'
+project.ext.moduleVersion = '1.1'
+project.ext.isRootModule = false
+apply from: new File(rootProject.ext.toolsDir, 'gradle/test-web-common.gradle')
+dependencies {
+	compile project(':web.interviewApp')
+	compile '3rdparty:testing.testng:5.8'
+}
+project.ext.moduleDeps = ['web.interviewApp']

@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="http://www.ivyrep.org/ivy-doc.xsl"?>
+<ivy-module version="1.4">
+
+  <info organisation="FAW" module="web.interviewApp" status="release" revision="1.1"/>
+
+  <configurations>
+    <conf name="build"/>
+    <conf name="run" extends="build"/>
+    <conf name="test"/>
+    <conf name="codegen"/>
+  </configurations>
+
+  <publications>
+    <artifact/>   <!-- publishes [module].jar -->
+  </publications>
+
+  <dependencies>
+
+   <!-- modules
+    <dependency name=" //code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rev="latest.release"/>
+      
+    <dependency name="web.functions.analytics" rev="latest.release"/>
+    <dependency name="web.styles" rev="latest.release"/>
+
+     3rd party 
+    <dependency org="3rdparty" name="util.apache.commons.el" rev="1.0"/>
+    <dependency org="3rdparty" name="util.apache.commons.lang" rev="2.1"/>
+    <dependency org="3rdparty" name="web.fileupload" rev="1.2.1"/>
+    <dependency org="3rdparty" name="util.apache.commons.logging" rev="1.1"/>-->
+  </dependencies>
+</ivy-module>
