@@ -1,0 +1,11 @@
+project.ext.moduleType = 'test-jar'
+project.ext.moduleName = 'services.interviewApp.test'
+project.ext.moduleVersion = '1.1'
+project.ext.isRootModule = false
+apply from: new File(rootProject.ext.toolsDir, 'gradle/test-jar-common.gradle')
+dependencies {
+	compile project(':services.interviewApp')
+	compile 'FAW:libraries.testUtils:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile '3rdparty:testing.testng:5.8'
+}
+project.ext.moduleDeps = ['services.interviewApp', 'libraries.testUtils']

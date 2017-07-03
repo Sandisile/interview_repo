@@ -1,0 +1,6 @@
+#Module Descriptor
+#Fri Jun 23 10:18:28 SAST 2017
+module-root=false
+module-version=1.50
+module-name=services.interviewApp
+module-type=web3

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	
+	<persistence-unit name="persistence/services.interviewApp.server.oracle.pu">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		
+		<class>services.interviewApp.jpa.entities.Candidate</class>
+		<class>services.interviewApp.jpa.entities.Comment</class>
+		<class>services.interviewApp.jpa.entities.Qualification</class>
+		<class>services.interviewApp.jpa.entities.Agency</class>
+		<class>services.interviewApp.jpa.entities.Application</class>
+		<class>services.interviewApp.jpa.entities.User</class>
+		<class>services.interviewApp.jpa.entities.Role</class>
+		<properties>
+			<property name='openjpa.Compatibility' value='CheckDatabaseForCascadePersistToDetachedEntity=true'/>
+			<property name='openjpa.Multithreaded' value='true'/>
+		</properties>
+	</persistence-unit>
+</persistence>

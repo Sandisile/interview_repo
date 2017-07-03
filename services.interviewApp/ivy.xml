@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="http://www.ivyrep.org/ivy-doc.xsl"?>
+<ivy-module version="1.4">
+
+  <info organisation="FAW" module="services.interviewApp" status="release" revision="1.1"/>
+
+  <configurations>
+    <conf name="build"/>
+    <conf name="run" extends="build"/>
+    <conf name="test"/>
+    <conf name="codegen"/>
+  </configurations>
+
+  <publications>
+    <artifact/>   <!-- publishes [module].jar -->
+  </publications>
+
+  <dependencies>
+
+    <!-- modules -->
+    <dependency name="web.functions.analytics" rev="latest.release"/>
+    <dependency name="web.styles" rev="latest.release"/>
+    <dependency name="libraries.eaf.servicelookup" rev="latest.release"/>
+    <dependency name="libraries.javaUtil" rev="latest.release"/>
+    <dependency name="libraries.logging" rev="latest.release"/>
+    <dependency name="libraries.security" rev="latest.release"/>
+    <dependency name="libraries.configuration" rev="latest.release"/>    
+    <dependency name="libraries.REST" rev="latest.release"/>
+    <dependency name="libraries.RESTDocs" rev="latest.release"/>
+    <dependency name="libraries.ejbUtils" rev="latest.release" />
+    <dependency name="web.webFramework" rev="latest.release"/>
+
+    <!-- 3rd party -->
+    <dependency org="3rdparty" name="web.spring.security" rev="4.0.3" />
+    <dependency org="3rdparty" name="web.spring.webmvc" rev="4.2.5" />
+    
+    <!--  
+    <dependency org="org.modelmapper" name="modelmapper" rev="0.7.4"/>
+    <dependency org="3rdparty" name="util.apache.commons.el" rev="1.0"/>
+    <dependency org="3rdparty" name="util.apache.commons.lang" rev="2.1"/>
+    <dependency org="3rdparty" name="web.fileupload" rev="1.2.1"/>
+    <dependency org="3rdparty" name="util.apache.commons.logging" rev="1.1"/>-->
+    <dependency org="3rdparty" name="connectors.jdbc.mysql" rev="5.1.20"/>
+    <dependency org="3rdparty" name="util.joda" rev="2.5"/>
+    
+    
+    
+    <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+	<dependency org="3rdparty" name="util.apache.commons.dbcp" rev="1.2.2"/>
+  </dependencies>
+</ivy-module>

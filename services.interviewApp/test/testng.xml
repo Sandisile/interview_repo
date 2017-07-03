@@ -1,0 +1,6 @@
+<suite name="web.example.test">
+<!-- 
+refer to http://testng.org/doc/documentation-main.html#testng-xml for details of how to setup this file.
+Please leave the name web.audit.test intact
+ -->
+</suite>

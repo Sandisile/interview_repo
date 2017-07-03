@@ -1,0 +1,24 @@
+project.ext.moduleType = 'web3'
+project.ext.moduleName = 'services.interviewApp'
+project.ext.moduleVersion = '1.50'
+project.ext.isRootModule = false
+apply from: new File(rootProject.ext.toolsDir, 'gradle/web3-common.gradle')
+dependencies {
+	compile 'FAW:web.functions.analytics:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:web.styles:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.eaf.servicelookup:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.javaUtil:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.logging:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.security:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.configuration:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.REST:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.RESTDocs:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:libraries.ejbUtils:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile 'FAW:web.webFramework:LATEST-DEVELOPMENT-SNAPSHOT'
+	compile '3rdparty:web.spring.security:4.0.3'
+	compile '3rdparty:web.spring.webmvc:4.2.5'
+	compile '3rdparty:connectors.jdbc.mysql:5.1.20'
+	compile '3rdparty:util.joda:2.5'
+	compile '3rdparty:util.apache.commons.dbcp:1.2.2'
+}
+project.ext.moduleDeps = ['web.functions.analytics', 'web.styles', 'libraries.eaf.servicelookup', 'libraries.javaUtil', 'libraries.logging', 'libraries.security', 'libraries.configuration', 'libraries.REST', 'libraries.RESTDocs', 'libraries.ejbUtils', 'web.webFramework']

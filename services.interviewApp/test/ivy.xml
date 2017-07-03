@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="http://www.ivyrep.org/ivy-doc.xsl"?>
+<ivy-module version="1.4">
+
+  <info organisation="FAW" module="services.interviewApp.test" status="release" revision="1.1"/>
+
+  <configurations>
+    <conf name="build"/>
+    <conf name="run" extends="build"/>
+    <conf name="test"/>
+    <conf name="codegen"/>
+  </configurations>
+
+  <publications>
+    <artifact/>   <!-- publishes [module].jar -->
+  </publications>
+
+  <dependencies>
+
+    <!-- modules -->
+    <dependency name="services.interviewApp" rev="latest.release"/>
+     <dependency name="libraries.testUtils" rev="latest.release"/>s
+
+    <!-- 3rd party -->
+    <dependency org="3rdparty" name="testing.testng" rev="5.8" conf="test->*"/>
+
+  </dependencies>
+
+</ivy-module>
